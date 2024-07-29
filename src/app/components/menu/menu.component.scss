@@ -1,0 +1,94 @@
+.nav{
+    width:15vw;
+    height:100vh;
+    position:absolute;
+    left:0;
+    top:0;
+    padding:0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background:rgba(0,0,0,0.05);
+    box-shadow:0 0 1em #AAA;
+    header{
+        width:90%;
+        height:15%;
+        text-align: center;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            height: 100%;
+        }
+    }
+    nav{
+        width:80%;
+        height:70%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap:5px;
+        a{
+            padding:10px;
+            background:#2ba954;
+            transition-duration: 0.2s;
+            color:white;
+            font-weight: bold;
+            font-size: 0.8em;
+            width:calc(90% - 20px);
+            text-align: center;
+            &:hover{
+                background-color: #1e753a;
+                cursor: pointer;
+                transform: translateX(10px);
+            }
+        }
+        details{
+            width:90%;
+            padding:10px;
+            summary{
+                width:calc(100% - 20px);
+                padding:10px;
+                list-style: none;
+                text-align: center;
+                &:hover{
+                    background:rgba(0,0,0,0.05);
+                    cursor: pointer;
+                }
+            }
+            div{
+                width:100%;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                gap:5px;
+            }
+            &[open]{
+                background:rgba(0,0,0,0.05)
+            }
+        }
+    }
+    footer{
+        width:80%;
+        height:5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+            width:80px;
+            background:red;
+            padding:5px;
+            text-align: center;
+            color:white;
+            transition-duration: 0.2s;
+            &:hover{
+                transform: translateX(5px);
+                background-color: darkred;
+                cursor: pointer;
+
+            }
+        }
+    }
+}

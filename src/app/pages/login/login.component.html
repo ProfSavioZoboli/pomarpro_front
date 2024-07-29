@@ -1,0 +1,18 @@
+<div class="fundo">
+    <div class="overlay">
+        <section class="login">
+            <header><img src="/assets/img/logo.png"></header>
+            <form [formGroup]="form" >
+                <input type="text" placeholder="Usuário" formControlName="usuario">
+                <input type="password" placeholder="Senha" formControlName="senha">
+                <p class="erro">{{msg_erro}}</p>
+                <button (click)="onLogin()">Entrar</button>
+            </form>
+            <footer>
+                <p>Desenvolvido por Sávio</p>
+            </footer>
+        </section>
+    </div>
+</div>
+
+
