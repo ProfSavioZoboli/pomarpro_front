@@ -16,3 +16,27 @@ button{
 .grande{
     width: calc(600px + 1em);
 }
+
+//Estilo da tabela de relatório
+
+.relatorio{
+    width:80%;
+    height:30%;
+    padding-top:10px;
+    h2{
+        font-family: arial;
+    }
+    table{
+        width: 100%;
+        font-family: arial;
+        th{
+            border-bottom:1px #CCC solid;
+            padding:3px;
+            text-align: left;
+        }
+        td{
+            border-bottom:1px #DDD solid;
+            padding:3px;
+        }
+    }
+}

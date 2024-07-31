@@ -40,7 +40,23 @@
         </div>
         
     </form>
-    <div>
-
+    <div class="relatorio">
+        <h2>Usuários cadastrados</h2>
+        <table>
+            <tr>
+                <th>Ação</th>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Login</th>
+                <th>e-mail</th>
+            </tr>
+            <tr *ngFor="let usuario of relatorio">
+                <td><button>Excluir</button></td>
+                <td>{{usuario.nome}} {{usuario.sobrenome}}</td>
+                <td>{{usuario.telefone}}</td>
+                <td>{{usuario.login}}</td>
+                <td>{{usuario.email}}</td>
+            </tr>
+        </table>
     </div>
 </div>
